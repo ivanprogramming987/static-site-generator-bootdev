@@ -3,8 +3,8 @@ from copypaste_directories import *
 from generatepages_recursive import *
 
 basepath = "/"
-if len(sys.argv) > 0:
-	basepath = sys.argv[0]
+if len(sys.argv) > 1:
+	basepath = sys.argv[1]
 
 def main():
 	copy_paste_directories("static", "docs")
